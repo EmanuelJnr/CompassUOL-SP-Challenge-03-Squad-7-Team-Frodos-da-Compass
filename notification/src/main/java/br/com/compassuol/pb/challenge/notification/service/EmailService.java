@@ -17,7 +17,7 @@ public class EmailService {
         this.emailSender = emailSender;
     }
 
-    public Email sendEmail(Email email) {
+    public void sendEmail(Email email) {
         try{
             SimpleMailMessage message = new SimpleMailMessage();
             message.setFrom(email.getFromEmail());
@@ -29,7 +29,7 @@ public class EmailService {
         }catch (MailException me){
             me.printStackTrace();
         }finally {
-            return emailRepository.save(email);
+            emailRepository.save(email);
         }
     }
 }

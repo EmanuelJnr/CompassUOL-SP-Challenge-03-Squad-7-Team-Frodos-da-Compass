@@ -2,6 +2,7 @@ package br.com.compassuol.pb.challenge.notification.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import java.util.UUID;
 
 @Data
 @Entity
@@ -9,7 +10,7 @@ import lombok.Data;
 public class Email {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private UUID id;
     private String fromEmail;
     private String fromName;
     private String replyTo;
