@@ -1,6 +1,5 @@
 package br.com.compassuol.pb.challenge.products.controller;
 
-import br.com.compassuol.pb.challenge.products.entity.Category;
 import br.com.compassuol.pb.challenge.products.entity.Product;
 import br.com.compassuol.pb.challenge.products.payload.ProductDTO;
 import br.com.compassuol.pb.challenge.products.service.ProductService;
@@ -8,7 +7,6 @@ import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController

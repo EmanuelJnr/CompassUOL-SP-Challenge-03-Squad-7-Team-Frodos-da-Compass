@@ -12,7 +12,6 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -27,14 +26,6 @@ public class ProductServiceImpl implements ProductService {
     }
     @Override
     public Product createProduct(ProductDTO productDTO) {
-
-        //Product product = mapToEntity(productDTO);
-
-        //Product newProduct = productRepository.save(product);
-        //productRepository.save(mapToEntity(productDTO));
-
-        //ProductDTO productResponse = mapToDTO(newProduct);
-
         return productRepository.save(mapToEntity(productDTO));
     }
 

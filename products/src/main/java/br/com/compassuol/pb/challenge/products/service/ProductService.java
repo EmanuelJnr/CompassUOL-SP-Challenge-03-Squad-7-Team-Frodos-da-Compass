@@ -2,7 +2,6 @@ package br.com.compassuol.pb.challenge.products.service;
 
 import br.com.compassuol.pb.challenge.products.entity.Product;
 import br.com.compassuol.pb.challenge.products.payload.ProductDTO;
-
 import java.util.List;
 
 public interface ProductService {

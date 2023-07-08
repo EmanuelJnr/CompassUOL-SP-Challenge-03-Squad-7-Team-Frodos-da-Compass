@@ -2,7 +2,6 @@ package br.com.compassuol.pb.challenge.products.payload;
 
 import br.com.compassuol.pb.challenge.products.entity.Category;
 import lombok.Data;
-
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.ArrayList;

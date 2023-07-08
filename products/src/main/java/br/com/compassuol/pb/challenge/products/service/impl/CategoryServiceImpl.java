@@ -1,15 +1,11 @@
 package br.com.compassuol.pb.challenge.products.service.impl;
 
 import br.com.compassuol.pb.challenge.products.entity.Category;
-import br.com.compassuol.pb.challenge.products.entity.Product;
 import br.com.compassuol.pb.challenge.products.exception.ResourceNotFoundException;
 import br.com.compassuol.pb.challenge.products.payload.CategoryDTO;
-import br.com.compassuol.pb.challenge.products.payload.ProductDTO;
 import br.com.compassuol.pb.challenge.products.repository.CategoryRepository;
-import br.com.compassuol.pb.challenge.products.repository.ProductRepository;
 import br.com.compassuol.pb.challenge.products.service.CategoryService;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.stream.Collectors;
 
