@@ -24,12 +24,11 @@ public class ProductServiceImpl implements ProductService {
         this.productRepository = productRepository;
         this.categoryServiceImpl = categoryServiceImpl;
     }
-    @Override
+
     public Product createProduct(ProductDTO productDTO) {
         return productRepository.save(mapToEntity(productDTO));
     }
 
-    @Override
     public List<ProductDTO> getAllProducts(int page, int linesPerPage, String direction, String orderBy) {
         Sort sort = direction.equalsIgnoreCase(Sort.Direction.DESC.name()) ? Sort.by(orderBy).descending() : Sort.by(orderBy).ascending();
 
@@ -41,13 +40,11 @@ public class ProductServiceImpl implements ProductService {
         return listOfProduct.stream().map(product -> mapToDTO(product)).collect(Collectors.toList());
     }
 
-    @Override
     public ProductDTO getProductById(Long id) {
         Product product = productRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Product", "id", id));
         return mapToDTO(product);
     }
 
-    @Override
     public ProductDTO updateProduct(ProductDTO productDTO, Long id) {
         Product product = productRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Product", "id", id));
 
@@ -57,11 +54,9 @@ public class ProductServiceImpl implements ProductService {
         product.setDescription(productDTO.getDescription());
         product.setPrice(productDTO.getPrice());
 
-        Product updatedProduct = productRepository.save(product);
-        return mapToDTO(updatedProduct);
+        return mapToDTO(productRepository.save(product));
     }
 
-    @Override
     public void deleteProductById(Long id) {
         Product product = productRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Product", "id", id));
         productRepository.delete(product);

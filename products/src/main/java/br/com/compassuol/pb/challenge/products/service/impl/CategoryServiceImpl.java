@@ -16,40 +16,30 @@ public class CategoryServiceImpl implements CategoryService {
         this.categoryRepository = categoryRepository;
     }
 
-    @Override
     public CategoryDTO createCategory(CategoryDTO categoryDTO) {
         Category category = mapToEntity(categoryDTO);
 
-        Category newCategory = categoryRepository.save(category);
-
-        CategoryDTO categoryResponse = mapToDTO(newCategory);
-
-        return categoryResponse;
+        return mapToDTO(categoryRepository.save(category));
     }
 
-    @Override
     public List<CategoryDTO> getAllCategory() {
         List<Category> categories = categoryRepository.findAll();
         return categories.stream().map(category -> mapToDTO(category)).collect(Collectors.toList());
     }
 
-    @Override
     public CategoryDTO getCategoryById(Long id) {
         Category category = categoryRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Category", "id", id));
         return mapToDTO(category);
     }
 
-    @Override
     public CategoryDTO updateCategory(CategoryDTO categoryDTO, Long id) {
         Category category = categoryRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Category", "id", id));
 
         category.setName(categoryDTO.getName());
 
-        Category updatedCategory = categoryRepository.save(category);
-        return mapToDTO(updatedCategory);
+        return mapToDTO(categoryRepository.save(category));
     }
 
-    @Override
     public void deleteCategoryById(Long id) {
         Category category = categoryRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Category", "id", id));
         categoryRepository.delete(category);
