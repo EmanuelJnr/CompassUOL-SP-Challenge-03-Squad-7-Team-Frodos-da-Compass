@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.compassuol.pb.challenge</groupId>
-	<artifactId>MS-products</artifactId>
+	<artifactId>ms-products</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>products</name>
 	<description>compassuol_pb_challenge_3</description>

@@ -10,10 +10,10 @@ public class GatewayConf {
     @Bean
     public RouteLocator categoryRouteLocator(RouteLocatorBuilder builder){
         return builder.routes()
-                .route("MS-products", r -> r
+                .route("ms-products", r -> r
                         .path("/categories/")
                         .uri("http://localhost:8081/"))
-                .route("MS-products", r -> r
+                .route("ms-products", r -> r
                         .path("/categories/{id}")
                         .uri("http://localhost:8081/"))
                 .build();
@@ -22,7 +22,7 @@ public class GatewayConf {
     @Bean
     public RouteLocator notificationRouteLocator(RouteLocatorBuilder builder){
         return builder.routes()
-                .route("MS-products", r -> r
+                .route("ms-products", r -> r
                         .path("/notifications/")
                         .uri("http://localhost:8081/"))
                 .build();
@@ -31,10 +31,10 @@ public class GatewayConf {
     @Bean
     public RouteLocator productRouteLocator(RouteLocatorBuilder builder){
         return builder.routes()
-                .route("MS-products", r -> r
+                .route("ms-products", r -> r
                         .path("/products/")
                         .uri("http://localhost:8081/"))
-                .route("MS-products", r -> r
+                .route("ms-products", r -> r
                         .path("/products/{id}")
                         .uri("http://localhost:8081/"))
                 .build();
@@ -43,10 +43,10 @@ public class GatewayConf {
     @Bean
     public RouteLocator roleRouteLocator(RouteLocatorBuilder builder){
         return builder.routes()
-                .route("MS-products", r -> r
+                .route("ms-products", r -> r
                         .path("/roles/")
                         .uri("http://localhost:8081/"))
-                .route("MS-products", r -> r
+                .route("ms-products", r -> r
                         .path("/roles/{id}")
                         .uri("http://localhost:8081/"))
                 .build();
@@ -55,10 +55,10 @@ public class GatewayConf {
     @Bean
     public RouteLocator userRouteLocator(RouteLocatorBuilder builder){
         return builder.routes()
-                .route("MS-products", r -> r
+                .route("ms-products", r -> r
                         .path("/users/")
                         .uri("http://localhost:8081/"))
-                .route("MS-products", r -> r
+                .route("ms-products", r -> r
                         .path("/users/{id}")
                         .uri("http://localhost:8081/"))
                 .build();
