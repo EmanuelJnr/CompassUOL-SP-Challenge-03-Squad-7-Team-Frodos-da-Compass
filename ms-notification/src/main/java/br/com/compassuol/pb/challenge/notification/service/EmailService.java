@@ -23,7 +23,7 @@ public class EmailService {
             message.setFrom(email.getFromEmail());
             message.setTo(email.getToEmail());
             message.setSubject(email.getSubject());
-            message.setText("Eu, "+email.getFromName()+", "+email.getBody());
+            message.setText(email.getBody());
             message.setReplyTo(email.getReplyTo());
             emailSender.send(message);
         }catch (MailException me){

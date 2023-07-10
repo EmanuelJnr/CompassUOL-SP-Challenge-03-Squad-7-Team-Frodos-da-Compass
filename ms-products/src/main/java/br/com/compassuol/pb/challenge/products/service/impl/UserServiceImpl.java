@@ -3,8 +3,10 @@ package br.com.compassuol.pb.challenge.products.service.impl;
 import br.com.compassuol.pb.challenge.products.entity.Role;
 import br.com.compassuol.pb.challenge.products.entity.User;
 import br.com.compassuol.pb.challenge.products.exception.ResourceNotFoundException;
+import br.com.compassuol.pb.challenge.products.payload.EmailDTO;
 import br.com.compassuol.pb.challenge.products.payload.RoleDTO;
 import br.com.compassuol.pb.challenge.products.payload.UserDTO;
+import br.com.compassuol.pb.challenge.products.publisher.RabbitMQProducer;
 import br.com.compassuol.pb.challenge.products.repository.UserRepository;
 import br.com.compassuol.pb.challenge.products.service.UserService;
 import org.springframework.stereotype.Service;
@@ -16,10 +18,12 @@ import java.util.stream.Collectors;
 public class UserServiceImpl implements UserService {
     private UserRepository userRepository;
     private RoleServiceImpl roleServiceImpl;
+    private RabbitMQProducer producer;
 
-    public UserServiceImpl(UserRepository userRepository, RoleServiceImpl roleServiceImpl){
+    public UserServiceImpl(UserRepository userRepository, RoleServiceImpl roleServiceImpl, RabbitMQProducer producer){
         this.userRepository = userRepository;
         this.roleServiceImpl = roleServiceImpl;
+        this.producer = producer;
     }
 
     public User createUser(UserDTO userDTO) {
@@ -39,6 +43,18 @@ public class UserServiceImpl implements UserService {
 
     public UserDTO updateUser(UserDTO userDTO, Long id) {
         User user = userRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("User", "id", id));
+
+        EmailDTO emailDTO = new EmailDTO();
+        emailDTO.setFromEmail("challengenotification10@gmail.com");
+        emailDTO.setToEmail(user.getEmail());
+        emailDTO.setSubject("User account has been changed");
+        emailDTO.setReplyTo("challengenotification10@gmail.com");
+        emailDTO.setContentType("text/plain");
+        String textPassword = "Your password before change: "+user.getPassword()+"\nYour password after change: "+userDTO.getPassword();
+        String textFirstName = "Your first name before change: "+user.getFirstName()+"\nYour first name after change: "+userDTO.getFirstName();
+        String textLastName = "Your last name before change: "+user.getLastName()+"\nYour last name after change: "+userDTO.getLastName();
+        emailDTO.setBody(textPassword +"\n\n"+ textFirstName +"\n\n"+ textLastName);
+        producer.sendMessage(emailDTO);
 
         user.setPassword(userDTO.getPassword());
         user.setFirstName(userDTO.getFirstName());
