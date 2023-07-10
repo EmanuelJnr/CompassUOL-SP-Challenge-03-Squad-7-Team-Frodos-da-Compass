@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c411d870-aa45-4409-86c9-a7f42e970b80" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../ms-notification/src/main/java/br/com/compassuol/pb/challenge/notification/consumers/EmailConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-notification/src/main/java/br/com/compassuol/pb/challenge/notification/consumers/EmailConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-notification/src/main/java/br/com/compassuol/pb/challenge/notification/payload/EmailDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-notification/src/main/java/br/com/compassuol/pb/challenge/notification/DTO/EmailDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/controller/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/payload/CategoryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/DTO/CategoryDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/payload/EmailDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/DTO/EmailDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/payload/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/DTO/ProductDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/payload/RoleDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/DTO/RoleDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/payload/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/DTO/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/publisher/RabbitMQProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/publisher/RabbitMQProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/service/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-products/src/main/java/br/com/compassuol/pb/challenge/products/service/impl/UserServiceImpl.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2SLb1YQuZqdYhcO8EAf36SAhJSz" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/i5-10400/Documents/GitHub/CompassUOL-SP-Challenge-03-Squad-7-Team-Frodos-da-Compass/gateway/src/main/java/br/com/compassuol/pb/challenge/gateway&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\i5-10400\Documents\GitHub\CompassUOL-SP-Challenge-03-Squad-7-Team-Frodos-da-Compass\gateway\src\main\java\br\com\compassuol\pb\challenge\gateway" />
+      <recent name="C:\Users\i5-10400\Documents\GitHub\CompassUOL-SP-Challenge-03-Squad-7-Team-Frodos-da-Compass\ms-products\src\main\java\br\com\compassuol\pb\challenge\products" />
+      <recent name="C:\Users\i5-10400\Documents\GitHub\CompassUOL-SP-Challenge-03-Squad-7-Team-Frodos-da-Compass\ms-authorization\src\main\java\br\com\compassuol\pb\challenge\authorization\DTO" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.compassuol.pb.challenge.gateway.conf" />
+      <recent name="br.com.compassuol.pb.challenge.authorization.config" />
+      <recent name="br.com.compassuol.pb.challenge.products.config" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.GatewayApplication">
+    <configuration name="AuthorizationApplication" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.compassuol.pb.challenge.authorization.AuthorizationApplication" />
+      <module name="ms-authorization" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.compassuol.pb.challenge.msauthorization.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.compassuol.pb.challenge.gateway.GatewayApplication" />
+      <module name="gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.compassuol.pb.challenge.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotificationApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.compassuol.pb.challenge.notification.NotificationApplication" />
+      <module name="ms-notification" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.compassuol.pb.challenge.notification.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PasswordGeneratorEncoder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.compassuol.pb.challenge.authorization.utils.PasswordGeneratorEncoder" />
+      <module name="ms-authorization" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.compassuol.pb.challenge.authorization.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.compassuol.pb.challenge.products.ProductsApplication" />
+      <module name="ms-products" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.compassuol.pb.challenge.products.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.NotificationApplication" />
+      <item itemvalue="Application.PasswordGeneratorEncoder" />
+      <item itemvalue="Application.AuthorizationApplication" />
+      <item itemvalue="Application.ProductsApplication" />
+      <item itemvalue="Application.GatewayApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ProductsApplication" />
+        <item itemvalue="Application.GatewayApplication" />
+        <item itemvalue="Application.NotificationApplication" />
+        <item itemvalue="Application.AuthorizationApplication" />
+        <item itemvalue="Application.PasswordGeneratorEncoder" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c411d870-aa45-4409-86c9-a7f42e970b80" name="Changes" comment="" />
+      <created>1688928595664</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688928595664</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
