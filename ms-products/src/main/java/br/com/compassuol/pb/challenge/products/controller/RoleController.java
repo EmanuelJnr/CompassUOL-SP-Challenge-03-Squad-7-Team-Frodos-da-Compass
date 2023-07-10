@@ -1,6 +1,6 @@
 package br.com.compassuol.pb.challenge.products.controller;
 
-import br.com.compassuol.pb.challenge.products.payload.RoleDTO;
+import br.com.compassuol.pb.challenge.products.DTO.RoleDTO;
 import br.com.compassuol.pb.challenge.products.service.RoleService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;

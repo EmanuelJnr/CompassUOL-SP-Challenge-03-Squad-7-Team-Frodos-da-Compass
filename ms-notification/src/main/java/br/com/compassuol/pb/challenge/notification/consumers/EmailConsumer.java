@@ -1,7 +1,7 @@
 package br.com.compassuol.pb.challenge.notification.consumers;
 
 import br.com.compassuol.pb.challenge.notification.entity.Email;
-import br.com.compassuol.pb.challenge.notification.payload.EmailDTO;
+import br.com.compassuol.pb.challenge.notification.DTO.EmailDTO;
 import br.com.compassuol.pb.challenge.notification.service.EmailService;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.BeanUtils;

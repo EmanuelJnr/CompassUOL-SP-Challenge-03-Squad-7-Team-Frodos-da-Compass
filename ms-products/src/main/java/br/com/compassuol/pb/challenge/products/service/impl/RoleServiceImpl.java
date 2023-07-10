@@ -2,7 +2,7 @@ package br.com.compassuol.pb.challenge.products.service.impl;
 
 import br.com.compassuol.pb.challenge.products.entity.Role;
 import br.com.compassuol.pb.challenge.products.exception.ResourceNotFoundException;
-import br.com.compassuol.pb.challenge.products.payload.RoleDTO;
+import br.com.compassuol.pb.challenge.products.DTO.RoleDTO;
 import br.com.compassuol.pb.challenge.products.repository.RoleRepository;
 import br.com.compassuol.pb.challenge.products.service.RoleService;
 import org.springframework.stereotype.Service;

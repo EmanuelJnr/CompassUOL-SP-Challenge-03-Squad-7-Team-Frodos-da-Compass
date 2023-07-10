@@ -1,4 +1,4 @@
-package br.com.compassuol.pb.challenge.products.payload;
+package br.com.compassuol.pb.challenge.products.DTO;
 
 import br.com.compassuol.pb.challenge.products.entity.Category;
 import lombok.Data;

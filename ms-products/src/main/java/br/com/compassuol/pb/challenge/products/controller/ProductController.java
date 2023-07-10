@@ -1,7 +1,7 @@
 package br.com.compassuol.pb.challenge.products.controller;
 
 import br.com.compassuol.pb.challenge.products.entity.Product;
-import br.com.compassuol.pb.challenge.products.payload.ProductDTO;
+import br.com.compassuol.pb.challenge.products.DTO.ProductDTO;
 import br.com.compassuol.pb.challenge.products.service.ProductService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;

@@ -1,6 +1,6 @@
 package br.com.compassuol.pb.challenge.products.service;
 
-import br.com.compassuol.pb.challenge.products.payload.CategoryDTO;
+import br.com.compassuol.pb.challenge.products.DTO.CategoryDTO;
 import java.util.List;
 
 public interface CategoryService {

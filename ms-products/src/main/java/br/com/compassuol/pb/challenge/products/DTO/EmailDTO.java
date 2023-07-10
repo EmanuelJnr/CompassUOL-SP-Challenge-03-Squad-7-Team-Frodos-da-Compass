@@ -1,4 +1,4 @@
-package br.com.compassuol.pb.challenge.products.payload;
+package br.com.compassuol.pb.challenge.products.DTO;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

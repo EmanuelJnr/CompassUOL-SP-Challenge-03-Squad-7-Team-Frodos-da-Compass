@@ -2,7 +2,7 @@ package br.com.compassuol.pb.challenge.products.service.impl;
 
 import br.com.compassuol.pb.challenge.products.entity.Category;
 import br.com.compassuol.pb.challenge.products.exception.ResourceNotFoundException;
-import br.com.compassuol.pb.challenge.products.payload.CategoryDTO;
+import br.com.compassuol.pb.challenge.products.DTO.CategoryDTO;
 import br.com.compassuol.pb.challenge.products.repository.CategoryRepository;
 import br.com.compassuol.pb.challenge.products.service.CategoryService;
 import org.springframework.stereotype.Service;
